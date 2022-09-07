@@ -30,8 +30,9 @@ class RestaurantServiceTest {
     @Test
     public void searching_for_non_existing_restaurant_should_throw_exception() throws restaurantNotFoundException {
         //WRITE UNIT TEST CASE HERE
+        //Here is the failing test case
         String cafe = "Amelie's cafe outer";
-        assertNull(service.findRestaurantByName(cafe));
+        asserNottNull(service.findRestaurantByName(cafe));
     }
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>
 
